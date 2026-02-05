@@ -1,91 +1,77 @@
 
 class Notes {
 	public static void main(String[] args) {
-		//char
+		//Converting Data Types
 
+		//Type Casting - Used between primitive types
+
+		int num;
+		double num2;
+		boolean bool;
 		char c;
-		c = 'a';
 
-		//String.charAt(index) - get a character from a string at the index.
+		//int -> double
 
-		String word;
-		word = "Hello World";
-		System.out.println(word.charAt(5)); //Get the 6th character of the string
+		num = 5;
+		num2 = (double)num; //this makes a copy
+		System.out.println(num2);
 
-		c = word.charAt(0); //Store the first character of word in c.
+		//double -> int
+		num2 = 5.5;
+		num = (int)num2;
+		System.out.println(num);
+
+		//int -> char
+		num = 82;
+		c = (char)num;
 		System.out.println(c);
 
-		//errors and exceptions
+		//char -> int
+		c = '!';
+		num = (int)c;
+		System.out.println(num);
 
-		//Syntax errors - Grammar of coding
+		//double -> char
+		num2 = 88.2;
+		c = (char)num2;
+		System.out.println(c);
 
-		//Crashes before executing
+		//char -> double
+		c = 'G';
+		num2 = (double)c;
+		System.out.println(num2);
 
-		//Spelling mistakes
-		//Missing brackets, semi-colons any other symbols
+		// System.out.println((boolean)5); Can't do this in java
 
-		// system.out.println("Hello World");
-		// System.out.println("Hello World")
+		//Parsing - Converting from String to other data types
 
-		//Runtime errors - Errors that can happen sometimes and not other times
-		//Happen during execution of the code.  Any code above still executes
+		String s = "55";
+		num = Integer.parseInt(s);
+		System.out.println(s + 10);
+		System.out.println(num + 10);
 
-		// int num = 5;
-		// int num1 = 0;
-		// System.out.println(num/num1);
+		//double
 
-		Scanner s = new Scanner(System.in);
+		s = "55.789";
+		num2 = Double.parseDouble(s);
+		System.out.println(s + 10);
+		System.out.println(num2 + 10);
 
-		// s.nextInt(); //Input mismatch if something other than an int is given
+		//Boolean -> true is true, everything else is false
 
+		s = "truE";
+		bool = Boolean.parseBoolean(s);
+		System.out.println(s + 10);
+		System.out.println(bool);
 
-		//Logical Errors - Program does something different than expected
+		//character
+		s = "5";
+		// c = Character.parseCharacter(s); Doesn't exist
+		c = s.charAt(0);
+		System.out.println(c);
 
-		// Assign 2 to 2 different variables.  Add them together and output the result
-
-		// int num2 = 2;
-		// int num3 = 3;
-		// System.out.println(num2 + num3);
-
-		//booleans all comparisons, and, not, or, order of operations
-
-		//comparison.  Comparing primitive types (can't be broken down)
-		//  Equals(==), not equals(!=), greater than (>), less than (<), greater than equals to (>=) less than equals (<=)
-
-		//Comparison must be done between the same data types
-
-		System.out.println(5 < 7); //true
-		System.out.println(7 < 5); //false
-
-		//greater than and less than are not true when the values are equal
-
-		System.out.println(5 < 5); //false
-
-		//Comparing non-primitive types (for now Strings), use var.equals()
-
-		System.out.println("hello".equals("Hello")); //false
-		String word2;
-		word2 = "Hello";
-		System.out.println(word2.equals("Bye")); //false
-		System.out.println(!word2.equals("Bye")); //true
-
-		//AND NOT and OR
-
-		//AND - &&, both booleans need to be true to resolve to a single true boolean
-		//only true when both booleans were true
-
-		System.out.println(true && true);//true
-
-		//OR - || (captial \), Only needs at least 1 of the two booleans to be true
-		//only false when both booleans are false
-
-		System.out.println(true || false); //true
-
-		//NOT - ! - swap the value of a boolean
-
-		System.out.println(!true); //false
-
-		//Order of operations of NOT AND OR.  Unless you use brackets to change the order
-
+		num = 5;
+		s = num + "";
+		System.out.println(s + 15);
 	}
 }
