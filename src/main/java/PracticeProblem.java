@@ -13,7 +13,7 @@ public class PracticeProblem {
 
 	public static void q1() {
 	Scanner s = new Scanner(System.in);
-		System.out.println("Input an integer: ");
+		System.out.print("Input an integer: ");
 	String num = s.nextLine();
 	num = "5" + num;
 	int word = Integer.parseInt(num);
@@ -24,7 +24,7 @@ public class PracticeProblem {
 
 	public static void q2() {
 	Scanner s = new Scanner(System.in);
-		System.out.println("Input a number: ");	
+		System.out.print("Input a number: ");	
 	String num = s.nextLine();
 	num = "4" + num + "3";
 	double dub = Double.parseDouble(num);
@@ -35,7 +35,7 @@ public class PracticeProblem {
 
 	public static void q3() {
 	Scanner s = new Scanner(System.in);
-		System.out.println("Input a boolean: ");
+		System.out.print("Input a boolean: ");
 	String num = s.nextLine();
 	boolean bool = Boolean.parseBoolean(num); 
 	bool = !bool;
@@ -45,7 +45,7 @@ public class PracticeProblem {
 
 	public static void q4() {
 	Scanner s = new Scanner(System.in);
-	System.out.println("Input an integer: ");
+	System.out.print("Input an integer: ");
 	String num = s.nextLine();
 	num = num + "3";
 	int value = Integer.parseInt(num);
@@ -57,9 +57,9 @@ public class PracticeProblem {
 
 	public static void q5() {
 	Scanner s = new Scanner(System.in);
-	System.out.println("Input an integer: ");
+	System.out.print("Input an integer: ");
 	String num = s.nextLine();
-	num = num + "1";
+	num = num + "0";
 	int word = Integer.parseInt(num);
 	double dub = word / 2.0;
 	System.out.println(dub);
@@ -68,7 +68,7 @@ public class PracticeProblem {
 
 	public static void q6() {
 	Scanner s = new Scanner(System.in);
-	System.out.println("Input an number: ");
+	System.out.print("Input a number: ");
 	String num = s.nextLine();
 	num = "1" + num;
 	double word = Double.parseDouble(num);
